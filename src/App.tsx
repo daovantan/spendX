@@ -35,7 +35,7 @@ useEffect(() => {
           </a>
           <a className="topButton diamond" href='#'>
             <img src="./src/images/btn_diamond.png" alt="Diamond"/>
-            <p className='number'>1500</p>
+            <p className='number'>1200</p>
           </a>
         </div>
         
