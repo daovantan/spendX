@@ -14,7 +14,7 @@ a{
 
 body {
     font-family: sans-serif;
-    background-color: black;
+    background-color: #c1c1c1;
     padding: 0px;
     margin: 0;
     color: white;
@@ -33,14 +33,17 @@ body {
     height: 100%;
 }
 
-#root .appContent{
+#root .app .appContent{
     width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+}
+
+#root .app.home .appContent{
     background-image: url("/src/images/bg.png");
     background-size: cover;
     background-position: bottom center;
-    padding: 5px;
-    box-sizing: border-box;
     height: calc(100% - 145px);
-    display: block;
-    position: relative;
 }
