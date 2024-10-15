@@ -97,15 +97,15 @@ useEffect(() => {
             <img src="./src/images/menu_friend.png"/>
             <p>Friends</p>
           </a>
-          <a className="menuItem mn-leaderboard" href='/leaderboard'>
-            <img src="./src/images/menu_leaderboard.png"/>
-            <p>Leaderboard</p>
-          </a>
           <a className="menuItem mn-task" href='/task'>
             <img src="./src/images/menu_task.png"/>
             <p>Tasks</p>
           </a>
-          <a className="menuItem mn-airdrop" href='airdrop'>
+          <a className="menuItem mn-leaderboard" href='/leaderboard'>
+            <img src="./src/images/menu_leaderboard.png"/>
+            <p>Leaderboard</p>
+          </a>
+          <a className="menuItem mn-airdrop" href='/airdrop'>
             <img src="./src/images/menu_airdrop.png"/>
             <p>Airdrop</p>
           </a>

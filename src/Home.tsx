@@ -1,8 +1,7 @@
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Navigate,
+  Route
 } from "react-router-dom";
 
 import Game from './Game.tsx'
@@ -20,7 +19,7 @@ return (
           <Route path="/friend" element={<Friend />}/>
           <Route path="/leaderboard" element={<Leaderboard />}/>
           <Route path="/task" element={<Task />}/>
-          <Route path="/airDrop" element={<Airdrop />}/>
+          <Route path="/airdrop" element={<Airdrop />}/>
       </Routes>
   </Router>
 );
