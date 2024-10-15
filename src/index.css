@@ -41,7 +41,7 @@ body {
     position: relative;
 }
 
-#root .app.home .appContent{
+#root .app.game .appContent{
     background-image: url("/src/images/bg.png");
     background-size: cover;
     background-position: bottom center;
