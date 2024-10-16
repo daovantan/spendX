@@ -24,7 +24,7 @@ useEffect(() => {
 }, [digCoins]);
 
   return (
-    <div className="app game">
+    <div className="app gamePage">
       <div className='appContent'>
         {/* Top fixed div */}
         <div className="topHolder">
@@ -80,7 +80,7 @@ useEffect(() => {
                 <a className="btnItem btn-coin" href='#'>
                   <img src="./src/images/icon_coin.png"/>
                   <p className='bgColor'><label className='number'>3000</label> coins</p>
-                  <p className='message show'>See you at 7am tomorow</p>
+                  <p className='message show'>See you tomorow</p>
                 </a>
                 <a className="btnItem btn-dig" href='#'>
                   <img src={iconDig}/>
@@ -93,31 +93,31 @@ useEffect(() => {
 
         {/* Bottom fixed div */}
         <div className="bottomHolder">
-          <a className="menuItem mn-friend" href='/friend'>
-            <img src="./src/images/menu_friend.png"/>
-            <p>Friends</p>
-          </a>
-          <a className="menuItem mn-task" href='/task'>
-            <img src="./src/images/menu_task.png"/>
-            <p>Tasks</p>
-          </a>
-          <a className="menuItem mn-leaderboard" href='/leaderboard'>
-            <img src="./src/images/menu_leaderboard.png"/>
-            <p>Leaderboard</p>
-          </a>
-          <a className="menuItem mn-airdrop" href='/airdrop'>
-            <img src="./src/images/menu_airdrop.png"/>
-            <p>Airdrop</p>
-          </a>
-        </div>
-      </div>
-
-      {/* Banner */}
-      <div className='bannerHolder'>
-        <div className='bannerContent'>
-            <a href='#'>
-              <img src="./src/images/banner_1.png"/>
+           {/* Banner */}
+          <div className='bannerHolder'>
+            <div className='bannerContent'>
+              {/* image banner */}
+            </div>
+          </div>
+          
+          <div className='menu'>
+            <a className="menuItem mn-friend" href='/friend'>
+              <img src="./src/images/menu_friend.png"/>
+              <p>Friends</p>
             </a>
+            <a className="menuItem mn-task" href='/task'>
+              <img src="./src/images/menu_task.png"/>
+              <p>Tasks</p>
+            </a>
+            <a className="menuItem mn-leaderboard" href='/leaderboard'>
+              <img src="./src/images/menu_leaderboard.png"/>
+              <p>Leaderboard</p>
+            </a>
+            <a className="menuItem mn-airdrop" href='/airdrop'>
+              <img src="./src/images/menu_airdrop.png"/>
+              <p>Airdrop</p>
+            </a>
+          </div>
         </div>
       </div>
     </div>
