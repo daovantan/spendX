@@ -2,6 +2,48 @@
 @tailwind components;
 @tailwind utilities; */
 
+@font-face {
+  font-family: 'Roboto';
+  src: url('/src/fonts/Roboto-Regular.eot');
+  src: url('/src/fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/src/fonts/Roboto-Regular.woff2') format('woff2'),
+      url('/src/fonts/Roboto-Regular.woff') format('woff'),
+      url('/src/fonts/Roboto-Regular.ttf') format('truetype'),
+      url('/src/fonts/Roboto-Regular.svg#Roboto-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/src/fonts/Roboto-Medium.eot');
+  src: url('/src/fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/src/fonts/Roboto-Medium.woff2') format('woff2'),
+      url('/src/fonts/Roboto-Medium.woff') format('woff'),
+      url('/src/fonts/Roboto-Medium.ttf') format('truetype'),
+      url('/src/fonts/Roboto-Medium.svg#Roboto-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/src/fonts/Roboto-Bold.eot');
+  src: url('/src/fonts/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/src/fonts/Roboto-Bold.woff2') format('woff2'),
+      url('/src/fonts/Roboto-Bold.woff') format('woff'),
+      url('/src/fonts/Roboto-Bold.ttf') format('truetype'),
+      url('/src/fonts/Roboto-Bold.svg#Roboto-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
 p{
     padding: 0;
     margin: 0;
@@ -13,8 +55,8 @@ a{
 }
 
 body {
-    font-family: sans-serif;
-    background-color: black;
+    font-family: "Roboto";
+    background-color: #F5F6FE;
     padding: 0px;
     margin: 0;
     color: white;
@@ -31,16 +73,51 @@ body {
 #root .app{
     position: relative;
     height: 100%;
+    box-sizing: border-box;
 }
 
-#root .appContent{
+#root .app .appContent{
     width: 100%;
-    background-image: url("/src/images/bg.png");
-    background-size: cover;
-    background-position: bottom center;
-    padding: 5px;
     box-sizing: border-box;
-    height: calc(100% - 145px);
     display: block;
     position: relative;
+    max-height: 100%;
+    overflow: scroll;
 }
+
+#root .app.gamePage .appContent{
+    background-image: url("/src/images/bg.png");
+    background-position: center bottom;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* Animation */
+@keyframes float {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    100% {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+  }
+  
+  /* Define the keyframes for the blinking animation */
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
