@@ -10,6 +10,7 @@
   justify-content: space-between;
   padding: 10px 10px 10px 10px;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .gamePage .topHolder .topButton{
@@ -17,6 +18,8 @@
   color: white;
   display: flex;
   text-decoration: none;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .gamePage .topHolder .topButton >p{
@@ -33,6 +36,11 @@
   margin-right: 10px;
 }
 
+
+.gamePage .topHolder .howtoplay >p{
+  padding-top: 16px;
+}
+
 .gamePage .topHolder .diamond >img{
   height: 30px;
 }
@@ -44,7 +52,7 @@
   position: absolute;
   right: 0;
   font-size: 16px;
-  top: calc(50% - 4px);
+  top: calc(50%);
   transform: translateY(-50%);
   margin: 0;
 }
@@ -221,7 +229,7 @@
   border-radius: 10px;
   font-weight: bold;
   width: 70px;
-  padding: 2px 0;
+  padding: 3px 0 1px 0;
   margin: 0 auto;
 }
 
@@ -248,6 +256,7 @@
   bottom: 15px;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .gamePage .bottomHolder .menu{
@@ -313,7 +322,7 @@
 
 .taskPage{
   color: #211818;
-  padding: 5px;
+  padding: 0 10px;
 }
 
 .taskPage .title{
@@ -449,6 +458,8 @@
   font-size: 14px;
   display: flex;
   justify-content: space-around;
+  /* align-content: center; */
+  align-items: center;
 }
 
 .taskPage .tabView .icon{
@@ -474,17 +485,18 @@
 
 .taskPage .tabView .info .des .iconGold{
   width: 15px;
-  margin: 0 10px;
+  margin: 0 5px;
 }
 
 .taskPage .tabView .button{
   background-color: #5865EF;
-  width: 150px;
-  padding: 12px 0;
+  width: 100px;
+  padding: 7px 0;
   color: white;
   border-radius: 20px;
   display: block;
   text-align: center;
+  font-weight: 100;
 }
 
 .taskPage .tabView .startBtn{
@@ -494,6 +506,7 @@
 .taskPage .otherTask,
 .taskPage .ourPartners{
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .taskPage .otherTask .title,
@@ -503,4 +516,418 @@
 
 .taskPage .otherTask .boxHolder{
   margin-top: 5px;
+}
+
+
+/* friendPage ////////////////////////*/
+.friendPage,
+.leaderBoardPage {
+  color: black;
+}
+
+.friendPage .title,
+.leaderBoardPage .title{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.friendPage .topHolder{
+  text-align: center;
+  padding: 0px 5px 5px 10px;
+  margin-top: 30px;
+}
+
+.friendPage .topHolder .earn{
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.friendPage .topHolder .number{
+  font-weight: bold;
+}
+
+.friendPage .topHolder .iconGem{
+  width: 12px;
+  margin-left: 7px;
+}
+
+.friendPage .row1{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.friendPage .boxContent{
+  position: relative;
+  color: #707070;
+  font-size: 13px;
+  text-align: left;
+  padding: 15px 15px;
+  box-sizing: border-box;
+  background: white;
+  border-radius: 20px;
+  width: 50%;
+  margin: 0 5px;
+}
+
+.friendPage .boxContent .r1{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.friendPage .boxContent .number{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+  color: black;
+}
+
+.friendPage .boxContent .icon{
+  width: 35px;
+  height: 35px;
+}
+
+.friendPage .boxContent .des{
+  height: 25px;
+}
+
+.friendPage .row2{
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.friendPage .listTick{
+  padding: 20px 20px;
+  background: white;
+  border-radius: 20px;
+}
+
+.friendPage .listTick .itemTick{
+  display: flex;
+  justify-content: flex-start;
+  font-size: 14px;
+  text-align: left;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.friendPage .listTick .itemTick:last-child{
+  margin-bottom: 0;
+}
+
+.friendPage .listTick .itemTick .iconTicK{
+  width: 12px;
+  height: 12px;
+  margin-top: 4px;
+  margin-right: 10px;
+}
+
+.friendPage .listUsers,
+.leaderBoardPage .listUsers{
+  padding: 10px 25px;
+  position: relative;
+  background: white;
+  min-height: 302px;
+  box-sizing: border-box;
+}
+
+.friendPage .listUsers .userItem,
+.leaderBoardPage .listUsers .userItem{
+  position: relative;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+.friendPage .listUsers .userItem::after,
+.leaderBoardPage .listUsers .userItem::after{
+  content: '';
+  position: absolute;
+  width: calc(100% - 65px);
+  right: 0;
+  bottom: 0;
+  background: #F5F4F4;
+  height: 1px;
+}
+
+.friendPage .listUsers .userItem:last-child::after,
+.leaderBoardPage .listUsers .userItem:last-child::after{
+  display: none;
+}
+
+.friendPage .listUsers .userItem:last-child,
+.leaderBoardPage .listUsers .userItem:last-child{
+  margin-bottom: 0;
+}
+
+.friendPage .listUsers .userItem .gem,
+.leaderBoardPage .listUsers .userItem .gem{
+  display: flex;
+  align-items: center;
+}
+
+
+.friendPage .listUsers .userItem .name,
+.leaderBoardPage .listUsers .userItem .name{
+  font-weight: bold;
+  width: 100%;
+  margin: 0 30px;
+  text-align: left;
+}
+
+.friendPage .listUsers .userItem .avt{
+  width: 45px;
+  height: 45px;
+}
+
+.friendPage .listUsers .userItem .iconGem,
+.leaderBoardPage .listUsers .userItem .iconGem{
+  width: 13px;
+  height: 13px;
+  margin: 0 5px;
+}
+
+.friendPage .buttonHolder,
+.leaderBoardPage .buttonHolder{
+  color: white;
+  padding: 20px 25px;
+  display: flex;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -1px;
+}
+
+.friendPage .buttonHolder .btn,
+.leaderBoardPage .buttonHolder .btn{
+  background-color: #00C26E;
+  font-size: 15px;
+  border-radius: 15px;
+  margin: 0px 5px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+}
+
+.friendPage .buttonHolder .btn .iconCopy,
+.leaderBoardPage .buttonHolder .btn .iconCopy{
+  width: 20px;
+  height: 24px;
+}
+
+.friendPage .buttonHolder .btn.invite,
+.leaderBoardPage .buttonHolder .btn.invite{
+  width: 100%;
+  margin-left: 0;
+}
+
+.friendPage .buttonHolder .btn.copy,
+.leaderBoardPage .buttonHolder .btn.copy{
+  width: 150px;
+  margin-right: 0;
+}
+
+/* leaderBoardPage ///////////////////////// */
+.leaderBoardPage {
+  background-color: #FF9700;
+  text-align: center;
+}
+
+.leaderBoardPage .buttonHolder .btn{
+  background-color: #FF9700;
+}
+
+.leaderBoardPage .topUsers{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 290px;
+  height: 176px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+
+.leaderBoardPage .userTop .avtUser{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.leaderBoardPage .userTop .userInfo{
+  font-size: 14px;
+  background-color: #FFD089;
+  border-radius: 15px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  text-align: center;
+  width: 90px;
+  height: 120px;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+.leaderBoardPage .userTop .userInfo .rank{
+  background-color: white;
+  border-radius: 50%;
+  color: #FF9700;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.leaderBoardPage .userTop .userInfo .gem{
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.leaderBoardPage .userTop .userInfo .name{
+  height: 30px;
+  padding-top: 10px;
+  font-weight: bold;
+}
+
+.leaderBoardPage .userTop.top1{
+  position: relative;
+  top:-50px;
+}
+
+.leaderBoardPage .userTop.top1 .userInfo{
+  background-color: #FFB955;
+  height: 170px;
+}
+
+.leaderBoardPage .listUsers{
+  background-color: white;
+  padding: 19px 10px;
+  min-height: 325px;
+  /* overflow: scroll; */
+  box-sizing: border-box;
+}
+
+.leaderBoardPage .listUsers .mainUser{
+  background-color: #F5F6FE;
+  border-radius: 40px;
+  /* width: 100%; */
+  padding:  20px;
+}
+
+.leaderBoardPage .listUsers .mainUser::after{
+  display: none;
+}
+
+.leaderBoardPage .topHolder{
+  color: white;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.leaderBoardPage .listUsers .userItem .name{
+  position: relative;
+  font-weight: 100;
+}
+
+.leaderBoardPage .listUsers .userItem .rank{
+  width: 90px;
+  text-align: center;
+}
+
+.leaderBoardPage .listUsers .userItem{
+  padding: 20px 20px;
+}
+
+.leaderBoardPage .listUsers .userItem.mainUser{
+  padding: 15px 25px 15px 20px;
+}
+
+
+/* airDrop ///////////////// */
+.airDrop {
+  background-color: black;
+}
+
+.airDrop .appContent{
+  padding: 0 10px;
+}
+
+.airDrop .topHolder{
+  position: relative;
+  margin-top: 20px;
+  text-align: center;
+  color: #767676;
+  font-size: 13px;
+}
+
+.airDrop .topHolder .iconBigDiamond{
+  position: relative;
+  width: 60px;
+  height: auto;
+}
+
+.airDrop .topHolder .title{
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+
+.airDrop .row1{
+  font-size: 15px;
+  color: #02F88E;
+  margin-top: 50px;
+  font-weight: 100;
+}
+
+.airDrop .listAirdrops{
+  position: relative;
+  margin-top: 30px;
+}
+
+.airDrop .listAirdrops .airItem{
+  position: relative;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-around;
+  color: black;
+  background-color: white;
+  align-items: center;
+  padding: 15px 20px;
+  margin-bottom: 10px;
+}
+
+
+.airDrop .listAirdrops .airItem .airIcon{
+  width: 45px;
+  height: auto;
+}
+
+.airDrop .listAirdrops .airItem .airContent{
+  font-size: 14px;
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.airDrop .listAirdrops .airItem .airTitle{
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.airDrop .listAirdrops .airItem .airTick{
+  width: 23px;
+  height: 23px;
 }

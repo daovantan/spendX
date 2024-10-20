@@ -72,20 +72,7 @@ const App: React.FC = () => {
               <p>600</p>
             </div>
           </div>
-          <a className='startBtn button' href='#'>Start</a>
-        </div>
-
-        <div className='tabView boxHolder telegram'>
-          <img className='icon' src="./src/images/icon_telegram.png"/>
-          <div className='info'>
-            <p className='subTitle'>Subscribe SpendX News</p>
-            <div className='des'>
-              <p>+</p>
-              <img className='iconGold' src="./src/images/icon_gold_coin.png"/>
-              <p>600</p>
-            </div>
-          </div>
-          <a className='startBtn button' href='#'>Start</a>
+          <div className='startBtn button' >Start</div>
         </div>
 
         <div className='tabView boxHolder telegram'>
