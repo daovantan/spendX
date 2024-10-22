@@ -28,6 +28,7 @@ const onTouchMove = (e: TouchEvent) => {
 document.documentElement.addEventListener('touchstart', onTouchStart, { passive: false })
 document.documentElement.addEventListener('touchmove', onTouchMove, { passive: false })
 
+window.Telegram.WebApp.disableVerticalSwipes();
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Home />
