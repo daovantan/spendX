@@ -23,7 +23,7 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, [digCoins]);
 
-const debug = "v33 =" + window.innerHeight;
+const debug = "v3 =" + window.innerHeight + " boyd = " + window.document.body.offsetHeight;
 
   return (
     <div className="app gamePage">
