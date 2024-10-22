@@ -23,9 +23,13 @@ useEffect(() => {
   return () => clearInterval(interval);
 }, [digCoins]);
 
+const debug = "v3 =" + window.innerHeight;
+
   return (
     <div className="app gamePage">
       <div className='appContent'>
+        <p className='debug'>{debug}</p>
+
         {/* Top fixed div */}
         <div className="topHolder">
           <a className="topButton howtoplay" href='#'>
