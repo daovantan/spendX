@@ -1,5 +1,9 @@
 /* gamePage ////////////////////////////////////////////////*/
 
+.gamePage .pinAnim canvas{
+  background-color: unset !important;
+}
+
 /* top */
 .gamePage .topHolder{
   position: relative;

@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-navigation/bottom-tabs": "^6.6.1",
     "react": "^18.3.1",
+    "react-adobe-animate": "^3.1.0",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.27.0"
   },

@@ -15,10 +15,10 @@ const App: React.FC = () => {
 return (
   <Router>
       <Routes>
-          <Route path="/Game" element={<Game />}/>
+          <Route path="/" element={<Game />}/>
           <Route path="/friend" element={<Friend />}/>
           <Route path="/leaderboard" element={<Leaderboard />}/>
-          <Route path="/" element={<Task />}/>
+          <Route path="/task" element={<Task />}/>
           <Route path="/airdrop" element={<Airdrop />}/>
       </Routes>
   </Router>
