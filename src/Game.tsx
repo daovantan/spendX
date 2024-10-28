@@ -3,12 +3,12 @@
 const App: React.FC = () => {
   
 
-Telegram.WebApp.ready();
+window.Telegram.WebApp.ready();
 //Telegram.WebApp.expand();
 // initData is empty object
-let initData = Telegram.WebApp.initData;
+let initData = window.Telegram.WebApp.initData;
  // initDataUnsafe is empty object,too
-let initDataUnsafe = Telegram.WebApp.initDataUnsafe;
+let initDataUnsafe = window.Telegram.WebApp.initDataUnsafe;
 
 //const initData = window.Telegram.WebApp; //JSON.stringify(window.Telegram.WebApp);
 const debug = initData + " - "+ initDataUnsafe;
